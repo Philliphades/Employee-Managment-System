@@ -1,0 +1,55 @@
+<button
+  nz-button
+  title="Add New"
+  nzType="danger"
+  (click)="add()"
+  >
+    <i nz-icon nzType="plus" nzTheme="outline"></i>
+    Add Employee
+</button>
+<nz-table #basicTable [nzData]="employees">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Date</th>
+      <th>Phone Number</th>
+      <th>Skills</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employees">
+      <td>{{ employee.name }}</td>
+      <td>{{ employee.email }}</td>
+      <td>{{ employee.date | date: 'mediumDate' }}</td>
+      <td>{{ employee.number }}</td>
+      <td>{{ employee.skills }}</td>
+      <td>
+        <button
+          nz-button
+          title="Edit"
+          nzType="primary"
+          (click)="editEmployee(employee.id)"
+        >
+          <i nz-icon nzType="edit" nzTheme="outline"></i>
+        </button>
+        <button
+          nz-button
+          title="Delete"
+          nzType="danger"
+          (click)="deleteEmployee(employee.id)"
+        >
+          <i nz-icon nzType="delete" nzTheme="outline"></i>
+        </button>
+        <!-- <button
+          nz-button
+          title="Delete"
+          nzType="danger"
+          (click)="update(employee.id)"
+        >
+          <i nz-icon nzType="delete" nzTheme="outline"></i>
+        </button>         -->
+      </td>
+    </tr>
+  </tbody>
+</nz-table>

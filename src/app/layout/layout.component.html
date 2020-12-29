@@ -1,0 +1,46 @@
+<nz-layout>
+  <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed" [nzTrigger]="null">
+    <div class="logo">EMS</div>
+     <!-- <nz-avatar class="alain-default__aside-user-avatar" [nzSrc]="user.avatar"></nz-avatar> -->
+    <ul
+      nz-menu
+      nzTheme="dark"
+      nzMode="inline"
+      [nzInlineCollapsed]="isCollapsed"
+    >
+      <li
+        nz-menu-item
+        routerLinkActive="active"
+        routerLink="/employee-list"
+        nzMatchRouter
+      >
+        <i nz-icon nzType="unordered-list"></i>
+        <span>Employee List</span>
+      </li>
+      <!-- <li
+        nz-menu-item
+        routerLinkActive="active"
+        routerLink="/create-employee"
+        nzMatchRouter
+      >
+        <i nz-icon nzType="form"></i>
+        <span>Create new Employee</span>
+      </li> -->
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-header>
+      <i
+        class="trigger"
+        nz-icon
+        [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
+        (click)="isCollapsed = !isCollapsed"
+      ></i>
+    </nz-header>
+    <nz-content>
+      <div class="inner-content">
+        <router-outlet></router-outlet>
+      </div>
+    </nz-content>
+  </nz-layout>
+</nz-layout>

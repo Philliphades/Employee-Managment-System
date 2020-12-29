@@ -1,0 +1,46 @@
+{
+  "employees": [
+    {
+      "name": "hades",
+      "email": "fghfhg@djsds",
+      "date": "2019-09-10T11:58:38.481Z",
+      "number": "7894523",
+      "skills": "java",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Hùng",
+      "email": "vlad@mail.com",
+      "date": "2020-03-19T21:38:30.936Z",
+      "number": "123654789",
+      "skills": "C#",
+      "address": "hn"
+    },
+    {
+      "id": 3,
+      "name": "Hào",
+      "email": "f4455dasas@djsds",
+      "date": "2019-09-10T11:58:38.481Z",
+      "number": "7894523",
+      "skills": "java",
+      "address": "dn"
+    },
+    {
+      "name": "phuocnguyen",
+      "email": "vlad@mail.com",
+      "date": "2020-03-19T21:38:30.936Z",
+      "number": "123654789",
+      "skills": "php",
+      "id": 4
+    },
+    {
+      "name": "phuocnguyendzIT",
+      "email": "changngositinh1995@gmail.com",
+      "date": "2020-12-09T04:07:12.728Z",
+      "number": "7892",
+      "skills": "hhahahah",
+      "id": 5
+    }
+  ]
+}

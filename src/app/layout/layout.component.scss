@@ -1,0 +1,50 @@
+nz-layout {
+  height: 100%;
+
+  .trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #1890ff;
+    }
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+    // height: auto;
+    // width: auto;
+  }
+
+  nz-header {
+    background: #fff;
+    padding: 0;
+  }
+
+  li:focus {
+    outline: none;
+  }
+
+  nz-content {
+    margin: 50px 16px 0 16px;
+    height: 100%;
+  }
+
+  .inner-content {
+    padding: 24px;
+    background: #fff;
+    min-height: 360px;
+  }
+
+  nz-footer {
+    text-align: center;
+  }
+}
